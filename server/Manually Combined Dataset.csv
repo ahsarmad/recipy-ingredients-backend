@@ -1,0 +1,358 @@
+id,name,type,portion,calories,fat,carbs,sugar,protein,vegan,vegetarian,keto,diabetic,pescatarian 
+1,american_cheese,dairy,113g,347,26g,10g,7.1g,18g,0,1,1,1,1
+2,asiago,dairy,28g,100,8g,0g,0g,7g,0,1,1,1,1
+3,blue_cheese,dairy,28g,100,8.1g,0.7g,0.1g,6.1g,0,1,1,1,1
+4,brie,dairy,144g,481,40g,0.7g,0.7g,30g,0,1,1,1,1
+5,butter,dairy,100g,731,78g,0g,0.1g,0.5g,0,1,1,1,1
+6,buttermilk,dairy,100g,62,3.3g,4.9g,4.9g,3.2g,0,1,0,1,1
+7,camembert,dairy,28g,85,6.9g,0.1g,0.1g,5.6g,0,1,1,1,1
+8,cheddar,dairy,113g,461,38g,2.8g,0.4g,26g,0,1,1,1,1
+9,chèvre,dairy,28g,103,8g,0g,0g,6g,0,1,1,1,1
+10,chocolate,dairy,18g,95,6g,11g,8.8g,0.8g,0,1,1,0,1
+11,condensed_milk,dairy,304g,976,26g,165g,165g,24g,0,1,0,0,1
+12,cotija,dairy,100g,366,30g,4g,0g,20g,0,1,0,1,1
+13,cottage_cheese,dairy,210g,300,21g,6.7g,5.3g,22g,0,1,0,1,1
+14,cream_cheese,dairy,15g,51,5g,0.8g,0.6g,0.9g,0,1,1,1,1
+15,crème_fraiche,dairy,230g,897,100g,5.6g,5.5g,5.4g,0,1,1,1,1
+16,curd,dairy,20g,70,1g,14g,14g,0g,0,1,1,1,1
+17,emmental,dairy,17g,70,5g,0g,0g,5g,0,1,1,1,1
+18,evaporated_milk,dairy,252g,338,19g,25g,25g,17g,0,1,0,1,1
+19,feta,dairy,150g,398,32g,5.8g,0g,21g,0,1,1,1,1
+20,ghee,dairy,100g,876,99g,0g,0g,0.3g,0,1,1,1,1
+21,goat_cheese,dairy,140g,510,42g,0.2g,0.2g,30g,0,1,1,1,1
+22,goat_milk,dairy,240g,101,2.5g,11g,11g,8g,0,1,0,1,1
+23,gouda,dairy,28g,101,7.8g,0.6g,0.6g,7.1g,0,1,1,1,1
+24,greek_yogurt,dairy,245g,238,12g,9.8g,9.8g,22g,0,1,1,1,1
+25,heavy_cream,dairy,240g,816,87g,6.8g,7g,6.8g,0,1,1,1,1
+26,ice_cream,dairy,135g,279,15g,32g,29g,4.7g,0,1,0,0,1
+27,kefir,dairy,243g,104,2.5g,12g,11g,9.2g,0,1,1,1,1
+28,kumis,dairy,100g,1875,50g,250g,225g,125g,0,1,0,0,1
+29,malted_milk,dairy,256g,164,4.9g,22g,20g,8.2g,0,1,0,0,1
+30,manchego,dairy,28g,120,10g,0g,0g,6g,0,1,1,1,1
+31,marble_cheese,dairy,30g,120,10g,1g,0g,7g,0,1,1,1,1
+32,milk,dairy,244g,146,7.8,11g,12g,8g,0,1,0,0,1
+33,monterey_jack,dairy,113g,421,34g,0.8g,0.6g,28g,0,1,1,1,1
+34,mozzerella,dairy,85g,240,6g,1g,0g,6g,0,1,1,1,1
+35,muenster,dairy,132g,486,40g,1.5g,1.5g,31g,0,1,1,1,1
+36,parmesan,dairy,28g,119,7.9g,3.5g,0g,8.4g,0,1,1,1,1
+37,parmigiano_reggiano,dairy,28g,110,8g,0g,0g,9g,0,1,1,1,1
+38,pecorino,dairy,28g,110,9g,1g,0g,8g,0,1,1,1,1
+39,pepper_jack_cheese,dairy,28g,110,9g,1g,0g,6g,0,1,1,1,1
+40,provolone,dairy,132g,463,35g,2.8g,0.7g,34g,0,1,1,1,1
+41,ricotta,dairy,246g,364,23g,15g,0.7g,24g,0,1,1,1,1
+42,roquefort,dairy,28g,105,8.7g,0.6g,0g,6.1g,0,1,1,1,1
+43,sheep_milk,dairy,245g,265,17g,13g,0g,15g,0,1,0,1,1
+44,sour_cream,dairy,240,475,46g,11g,8.2g,5.9g,0,1,1,0,1
+45,sour_milk,dairy,244g,122,4.8g,11.4g,12.3g,8.1g,0,1,0,0,1
+46,swiss,dairy,108g,424,33g,1.6g,0g,29g,0,1,1,1,1
+47,taleggio,dairy,28g,80,7g,0g,1g,5g,0,1,1,1,1
+48,whey,dairy,34g,110,1g,10g,2g,20g,0,1,1,1,1
+49,whipped_cream,dairy,40g,137,14g,3.4g,3.4g,1.1g,0,1,1,1,1
+50,yogurt,dairy,170g,107,2.6g,12g,12g,8.9g,0,1,1,1,1
+51,apple,fruit,125g,65,0.2g,17g,13g,0.3g,1,1,0,1,1
+52,apricot,fruit,155g,74,0.6g,17g,14g,2.2g,1,1,0,1,1
+53,avocado,fruit,230g,368,34g,20g,1.5g,4.6g,1,1,1,1,1
+54,banana,fruit,225g,200,0.7g,51g,28g,2.5g,1,1,0,1,1
+55,blackberry,fruit,144g,62,0.7g,14g,7g,2g,1,1,1,1,1
+56,blueberry,fruit,148g,84,0.5g,21g,15g,1.1g,1,1,1,1,1
+57,cherry,fruit,150g,95,0.3g,24g,19g,1.6g,1,1,0,1,1
+58,clementine,fruit,200g,106,0.6g,27g,21g,1.6g,1,1,0,1,1
+59,coconut,fruit,85g,301,28g,13g,5.3g,2.8g,1,1,0,1,1
+60,crabapple,fruit,110g,84,0.3g,22g,0g,0.4g,1,1,1,1,1
+61,cranberries,fruit,110g,51,0.1g,13g,4.7g,0.5g,1,1,1,1,1
+62,currant,fruit,122g,63,0.2g,15g,8.3g,1.6g,1,1,0,1,1
+63,date,fruit,160g,451,0.6g,120g,101g,3.9g,1,1,1,1,1
+64,dragon_fruit,fruit,28g,74,0g,23g,23g,1g,1,1,0,1,1
+65,durian,fruit,243g,357,13g,66g,0g,3.6g,1,1,0,1,1
+66,elderberry,fruit,145g,106,0.7g,27g,0g,1g,1,1,0,1,1
+67,fig,fruit,50g,37,0.2g,9.6g,8.1g,0.4g,1,1,0,1,1
+68,goji_berry,fruit,28g,98,0.1g,22g,13g,4g,1,1,0,1,1
+69,grape,fruit,150,104,0.2g,27g,23g,1.1g,1,1,0,1,1
+70,grapefruit,fruit,180g,76,0.3g,19g,12g,1.4g,1,1,0,1,1
+71,guava,fruit,165g,112,1.6g,24g,15g,4.2g,1,1,0,1,1
+72,honeydew_melon,fruit,155g,56,0.2g,14g,13g,0.8g,1,1,0,1,1
+73,huckleberry,fruit,100g,37,0.1,8.7g,0g,0.4g,1,1,0,1,1
+74,jackfruit,fruit,165g,157,1.1g,38g,31g,2.8g,1,1,1,1,1
+75,jujube,fruit,100g,79,0.2g,20g,0g,1.2g,1,1,0,1,1
+76,kiwano,fruit,233g,103,2.9g,18g,0g,4.2g,1,1,0,1,1
+77,kiwi,fruit,180g,104,0.8g,25g,16g,1.9g,1,1,0,1,1
+78,kumquat,fruit,185g,131,1.6g,29g,17g,3.5g,1,1,0,1,1
+79,lemon,fruit,200g,58,0.6g,19g,5g,2.2g,1,1,1,1,1
+80,lime,fruit,200g,60,0.4g,21g,3.4g,1.4g,1,1,1,1,1
+81,longan,fruit,100g,60,0.1g,15g,0g,1.3g,1,1,0,1,1
+82,loquat,fruit,149g,70,0.3g,18g,0g,0.6g,1,1,0,1,1
+83,lychee,fruit,190g,125,0.8g,31g,29g,1.6g,1,1,0,1,1
+84,mamey,fruit,175g,217,0.8g,56g,35,2.5g,1,1,0,1,1
+85,mango,fruit,165g,99,0.6g,25g,23g,1.4g,1,1,0,1,1
+86,mulberry,fruit,140g,60,0.5g,14g,11g,2g,1,1,0,1,1
+87,nectarine,fruit,155g,60,0.4g,14g,12g,1.6g,1,1,0,1,1
+88,orange,fruit,180g,85g,0.2g,21g,17g,1.7g,1,1,0,1,1
+89,papaya,fruit,230g,99,0.6g,25g,18g,1.1g,1,1,0,1,1
+90,passion_fruit,fruit,236g,229,1.7g,55g,26g,5.2g,1,1,1,1,1
+91,peach,fruit,155g,65,0.4g,16g,13g,1.4g,1,1,1,1,1
+92,pear,fruit,125g,71,0.2g,19g,12g,0.5g,1,1,0,1,1
+93,persimmon,fruit,170g,119,0.3g,32g,21g,1g,1,1,0,1,1
+94,pineapple,fruit,165g,83,0.2g,22g,16g,0.9g,1,1,0,1,1
+95,plantain,fruit,265g,406,0.2g,98g,6.1g,3.3g,1,1,0,1,1
+96,plum,fruit,155g,71,0.4g,18g,15g,1.1g,1,1,0,1,1
+97,pluot,fruit,154g,69,0g,17g,15g,1g,1,1,1,1,1
+98,pomegranate,fruit,175g,145,2g,33g,24g,2.9g,1,1,0,1,1
+99,pomelo,fruit,28g,105,0g,10g,15g,1g,1,1,0,1,1
+100,prune,fruit,160g,384,0.6g,102g,61g,3.5g,1,1,0,1,1
+101,raisins,fruit,160g,478,0.4g,127g,104g,5.3g,1,1,0,1,1
+102,rambutan,fruit,150g,123,0.3g,31g,0g,1g,1,1,0,1,1
+103,raspberry,fruit,123g,64,0.8g,15g,5.4g,1.5g,1,1,1,1,1
+104,starfruit,fruit,132g,41,0.4g,8.9g,5.3g,1.4g,1,1,1,1,1
+105,strawberry,fruit,90g,40,7g,0.3g,0.6g,4.4g,1,1,1,1,1
+106,tamarillo,fruit,97g,29,1g,8g,7g,1g,1,1,0,1,1
+107,tamarind,fruit,120g,287,0.7g,75g,47g,3.4g,1,1,0,1,1
+108,tangerine,fruit,195g,103,0.6g,26g,21g,1.6g,1,1,0,1,1
+109,watermelon,fruit,154g,46,0.2g,12g,9.6g,0.9g,1,1,1,1,1
+110,yuzu,fruit,15g,10,0g,2g,2g,0g,1,1,0,1,1
+111,corn,grains,103g,99,1.5g,22g,4.7g,3.5g,1,1,0,,1
+112,wheat,grains,192g,632,3.7g,131g,0.8g,30g,1,1,0,,1
+113,oats,grains,41g,153,2.6g,27g,0.4g,5.3g,1,1,0,,1
+114,rice,grains,158g,205,0.4g,45g,0.1g,4.3g,1,1,0,,1
+115,millet,grains,174g,207,1.7g,41g,0.2g,6.1g,1,1,0,,1
+116,rye,grains,32g,83,1.1g,15g,1.2g,2.7g,1,1,0,,1
+117,barley,grains,157g,193,0.7g,44g,0.4g,3.5g,1,1,0,,1
+118,triticale,grains,48g,161,1g,35g,0g,6.3g,1,1,0,,1
+119,teff,grains,252g,255,1.6g,50g,0g,9.8g,1,1,0,,1
+120,sorghum,grains,361g,253,2.7g,55g,1.9g,8.2g,1,1,0,,1
+121,amaranth,grains,246g,251,3.9g,46g,0g,9.3g,1,1,0,,1
+122,buckwheat,grains,168g,155,1g,33g,1.5g,5.7g,1,1,0,,1
+123,bulgur,grains,182g,151,0.4g,34g,0.2g,5.6g,1,1,0,,1
+124,farro,grains,100g,337,2.1g,71g,7.8g,15g,1,1,0,,1
+125,einkorn,grains,30g,100,0.5g,20g,0g,4g,1,1,0,,1
+126,emmer,grains,83g,303,1.7g,59g,0.8g,9.9g,1,1,0,,1
+127,spelt,grains,194g,246,1.6g,51g,0g,11g,1,1,0,,1
+128,farik,grains,140g,479,2g,106g,1g,17g,1,1,0,,1
+129,durum wheat,grains,63g,221,0.8g,44g,0.8g,7.6g,1,1,0,,1
+130,khorasan wheat,grains,100g,337,2g,70g,8g,15g,1,1,0,,1
+131,quinoa,grains,93g,111,1.8g,20g,0.8g,4.1g,1,1,0,,1
+132,kaniwa,grains,45g,154,2g,0g,0g,0g,1,1,0,,1
+133,wild rice,grains,164g,166,0.6g,35g,1.2g,6.5g,1,1,0,,1
+134,brown rice,grains,98g,109,0.8g,23g,0g,2.3g,1,1,0,,1
+135,allspice,herbs,1.9g,5,0.2g,1.4g,0g,0.1g,1,1,1,1,1
+136,basil,herbs,0.7g,2,0g,0.3g,0g,0.2g,1,1,1,1,1
+137,bay_leaf,herbs,1g,3,0.1g,0.8g,0g,0.1g,1,1,1,1,1
+138,black_pepper,herbs,2.3g,6,0.1g,1.5g,0g,0.2g,1,1,1,1,1
+139,cardamom,herbs,2g,6,0.1g,1.4g,0g,0.2g,1,1,1,1,1
+140,cayenne,herbs,1.8g,6,0.3g,1g,0.2g,0.2g,1,1,1,1,1
+141,chervil,herbs,0.6g,1,0g,0.3g,0,0.1g,1,1,1,1,1
+142,chilli_flake,herbs,1g,3,0.8g,0g,0g,0g,1,1,1,1,1
+143,chipotle,herbs,2.1g,7,0.1g,1.5g,0.9g,0.2g,1,1,1,1,1
+144,chive,herbs,3g,1,0g,0.1g,0.1g,0.1g,1,1,1,1,1
+145,cilantro,herbs,8g,2,0g,0.3g,0.1g,0.2g,1,1,1,1,1
+146,cinnamon,herbs,2.6g,6,0g,2.1g,0.1g,0.1g,1,1,1,1,1
+147,clove,herbs,2.1g,6,0.3g,1.4g,0.1g,0.1g,1,1,1,1,1
+148,coriander,herbs,0.6g,2,0g,0.3g,0g,0.1g,1,1,1,1,1
+149,cumin,herbs,2.1g,8,0.5g,0.9g,0.1g,0.4g,1,1,1,1,1
+150,curry_leaves,herbs,1g,0,0g,0g,0g,0g,1,1,1,1,1
+151,dill,herbs,1g,0,0g,0.1g,0g,0g,1,1,1,1,1
+152,fennel_seed,herbs,2g,7,0.3g,1g,0g,0.3g,1,1,1,1,1
+153,garlic_powder,herbs,3.1g,10,0g,2.3g,0.1g,0.5g,1,1,1,1,1
+154,ginger,herbs,2g,2,0g,0.4g,0g,0g,1,1,1,1,1
+155,lavender,herbs,2.8g,5,0.1g,0.9g,0.1g,0.4g,1,1,1,1,1
+156,lemongrass,herbs,33.5g,33,0.2g,8.5g,0g,0.6g,1,1,1,1,1
+157,marjoram,herbs,0.6g,2,0g,0.4g,0g,0.1g,1,1,1,1,1
+158,mint_leaf,herbs,5.5g,3,0g,0.5g,0g,0.2g,1,1,1,1,1
+159,onion_powder,herbs,2.4g,8,0g,1.9g,0.2g,0.3g,1,1,1,1,1
+160,oregano,herbs,1g,3,0g,0.7g,0g,0.1g,1,1,1,1,1
+161,paprika,herbs,2.3g,7,0.3g,1.2g,0.2g,0.3g,1,1,1,1,1
+162,parsely,herbs,3.8g,1,0g,0.2g,0g,0.1g,1,1,1,1,1
+163,peppercorn,herbs,2.3g,6,0.1g,1.5g,0g,0.2g,1,1,1,1,1
+164,rosemary,herbs,1.2g,4,0.2g,0.8g,0g,0.1g,1,1,1,1,1
+165,saffron,herbs,0.7g,2,0g,0.5g,0g,0.1g,1,1,1,1,1
+166,sage,herbs,0.7g,2,0.1g,0.4g,0g,0.1g,1,1,1,1,1
+167,shiso,herbs,0.9g,0,0g,0.1g,0g,0g,1,1,1,1,1
+168,sorrel,herbs,1g,0,0g,0g,0g,0g,1,1,1,1,1
+169,star_anise,herbs,1g,3,0.1g,0.5g,0g,0.2g,1,1,1,1,1
+170,stevia,herbs,4.7g,0,0g,4.7g,0g,0g,1,1,1,1,1
+171,tarragon,herbs,1.8g,5,0.1g,0.9g,0g,0.4g,1,1,1,1,1
+172,thyme,herbs,0.8g,1,0g,0.2g,0g,0g,1,1,1,1,1
+173,turmeric,herbs,3g,9,0.1g,2g,0.1g,0.3g,1,1,1,1,1
+174,wasabi,herbs,10g,29,1.1g,4.6g,1.3g,0.2g,1,1,1,1,1
+175,almond,nuts,24g,138,12g,5.2g,1g,5g,1,1,1,1,1
+176,brazil_nuts,nuts,25g,165,17g,2.9g,0.6g,3.6g,1,1,1,1,1
+177,candlenut,nuts,28g,178,19g,3.4g,1.1g,2g,1,1,1,1,1
+178,cashew,nuts,28g,157,12g,8.6g,1.7g,5.2g,1,1,1,1,1
+179,chestnuts,nuts,28g,56,0.3g,13g,0g,0.5g,1,1,1,1,1
+180,chia,nuts,24g,116,7.4g,10.2g,0g,4g,1,1,1,1,1
+181,flax,nuts,30g,165,12.9g,9g,0.5g,5.7g,1,1,1,1,1
+182,hazelnut,nuts,28g,183,18g,5g,1.4g,4.3g,1,1,1,1,1
+183,lotus_seeds,nuts,28g,25,0.1g,4.9g,0g,1.2g,1,1,1,1,1
+184,macadamia,nuts,28g,204,21g,3.9g,1.3g,2.2g,1,1,1,1,1
+185,peanut,nuts,28g,161,14g,4.6g,1.3g,7.3g,1,1,1,1,1
+186,pecan,nuts,30g,200,22g,4.2g,1.2g,2.8g,1,1,1,1,1
+187,pine_nut,nuts,28g,191,19g,3.7g,1g,3.9g,1,1,1,1,1
+188,pistachio,nuts,28g,160,12.8g,7.6g,2g,6g,1,1,1,1,1
+189,poppy_seed,nuts,28g,150,12g,7.9g,0.8g,5g,1,1,1,1,1
+190,pumpkin_seeds,nuts,32g,142,6g,17g,0g,6g,1,1,1,1,1
+191,sesame_seed,nuts,28g,160,14g,7.3g,0g,4.8g,1,1,1,1,1
+192,sunflower_seeds,nuts,64g,349,32g,10g,1.8g,12.5g,1,1,1,1,1
+193,tiger_nuts,nuts,30g,120,7g,19g,9g,2g,1,1,1,1,1
+194,walnut,nuts,28g,182,18.2g,3.9g,0.7g,4.3g,1,1,1,1,1
+195,chicken ,meat,85g,187,11g,0g,0g,20g,0,0,1,,0
+196,turkey ,meat,113g,214,8.4g,0.1g,0g,32g,0,0,1,,0
+197,ham,meat,134g,186,6.8g,1.4g,1.4g,30g,0,0,1,,0
+198,pork,meat,85g,202,12g,0g,0g,22g,0,0,1,,0
+199,beef,meat,85g,220,14g,0g,0g,22g,0,0,1,,0
+200,lamb,meat,85g,250,18g,0g,0g,21g,0,0,1,,0
+201,moose,meat,85g,114,.8g,0g,0g,25g,0,0,1,,0
+202,venison,meat,85g,128,2g,0g,0g,26g,0,0,1,,0
+203,caribou,meat,85g,142,3.8g,0g,0g,25g,0,0,1,,0
+204,elk,meat,85g,124,1.6g,0g,0g,26g,0,0,1,,0
+205,buffalo,meat,87g,207,13g,0g,0g,21g,0,0,1,,0
+206,bear,meat,85g,220,11g,0g,0g,28g,0,0,1,,0
+207,veal,meat,87g,196,9.7g,0g,0g,26g,0,0,1,,0
+208,salmon,fish,227g,468,28g,0g,0g,50g,0,0,1,,1
+209,trout,fish,62g,118,5.3g,0g,0g,17g,0,0,1,,1
+210,tilapia,fish,170g,218,4.5g,0g,0g,44g,0,0,1,,1
+211,mahi mahi,fish,159g,173,1.4g,0g,0g,38g,0,0,1,,1
+212,cod,fish,180g,189,1.5g,0g,0g,41g,0,0,1,,1
+213,halibut,fish,85g,94,1.4g,0g,0g,19g,0,0,1,,1
+214,pike,fish,124g,148,1.9g,0g,0g,30g,0,0,1,,1
+215,macKerel,fish,88g,231,16g,0g,0g,21g,0,0,1,,1
+216,sea bass,fish,101g,125,2.6g,0g,0g,24g,0,0,1,,1
+217,tuna,fish,85g,111,.5g,0g,0g,25g,0,0,1,,1
+218,swordfish,fish,106g,182,8.4g,0g,0g,25g,0,0,1,,1
+219,catfish,fish,143g,206,10g,0g,0g,26g,0,0,1,,1
+220,carp ,fish,85g,138,6.1g,0g,0g,19g,0,0,1,,1
+221,flounder,fish,127g,109,3g,0g,0g,19g,0,0,1,,1
+222,red snapper,fish,170g,218,2.9g,0g,0g,45g,0,0,1,,1
+223,perch,fish,170g,199,2g,0g,0g,42g,0,0,1,,1
+224,striped bass,fish,101g,125,2.6g,0g,0g,24g,0,0,1,,1
+225,barramundi,fish,85g,100,1.1g,0g,0g,21g,0,0,1,,1
+226,anchovy,fish,4g,8.4,0.4g,0g,0g,1.2g,0,0,1,,1
+227,sardines,fish,12g,25,1.4g,0g,0g,3g,0,0,1,,1
+228,herring,fish,143g,290,17g,0g,0g,33g,0,0,1,,1
+229,eel,fish,28g,67,4.2g,0g,0g,6.7g,0,0,1,,1
+230,octopus,fish,85g,139,1.8g,3.7g,0g,25g,0,0,1,,1
+231,squid,fish,28g,26,.4g,.9g,0g,4.4g,0,0,1,,1
+232,cuttlefish,fish,85g,134,1.2g,1.4g,0g,28g,0,0,1,,1
+233,oyster,fish,25g,41,1.2g,2.5g,0g,4.7g,0,0,1,,1
+234,clam,fish,85g,126,1.7g,4.4g,0g,22g,0,0,1,,1
+235,mussel,fish,85g,146,3.8g,6.3g,0g,20g,0,0,1,,1
+236,scallop,fish,13g,14,.1g,.7g,0g,2.7g,0,0,1,,1
+237,shrimp,fish,5g,6,.1g,.1g,0g,1.1g,0,0,1,,1
+238,prawns,fish,5g,6,.1g,.1g,0g,1.1g,0,0,1,,1
+239,lobster,fish,85g,122,1.6g,2.7g,0g,22g,0,0,1,,1
+240,crab ,fish,118g,98,.9g,0g,0g,21g,0,0,1,,1
+241,crayfish ,fish,85g,65,.8g,0g,0g,14g,0,0,1,,1
+242,conch,fish,127g,165,1.5g,2.2g,0g,33g,0,0,1,,1
+243,abalone,fish,85g,161,5.8g,9.4g,0g,17g,0,0,1,,1
+244,escargot,fish,85g,77,1.2g,1.7g,0g,14g,0,0,1,,1
+245,whelks,fish,28g,28,.3g,2.4g,1.8g,3.7g,0,0,1,,1
+246,frog,meat,45g,33,.1g,0g,0g,7.4g,0,0,1,,0
+247,duck,meat,140g,472,40g,0g,0g,27g,0,0,1,,0
+248,hen,meat,257g,666,47g,0g,0g,57g,0,0,1,,0
+249,goose,meat,85g,259,19g,0g,0g,21g,0,0,1,,0
+250,grouse,meat,140g,335,17g,0g,0g,45g,0,0,1,,0
+251,pheasant,meat,127g,304,15g,0g,0g,41g,0,0,1,,0
+252,quail,meat,85g,193,12g,0g,0g,21g,0,0,1,,0
+253,squab,meat,111g,236,14g,0g,0g,27g,0,0,1,,0
+254,pigeon,meat,250g,175,10g,0g,0g,28g,0,0,1,,0
+255,goat,meat,340g,486,10g,0g,0g,92g,0,0,1,,0
+256,rabbit,meat,85g,175,7.1g,0g,0g,26g,0,0,1,,0
+257,mutton,meat,85g,250,18g,0g,0g,21g,0,0,1,,0
+258,bison,meat,87g,207,13g,0g,0g,21g,0,0,1,,0
+259,  garlic  ,vegetable,3g,4.5,0g,1g,0g,.2g,1,1,0,1,0
+260,  onion  ,vegetable,94g,41,.2g,9.5g,4.4g,1.3g,1,1,0,1,0
+261,  bell pepper  ,vegetable,114g,32,.2g,7.5g,2.9g,1.1g,1,1,0,1,0
+262,  carrot  ,vegetable,46g,16,3.8g,,1.6g,.3g,1,1,0,1,0
+263,  tomato  ,vegetable,123g,22,.3g,4.8g,3.2g,1.1g,1,1,0,1,0
+264,  scallion  ,vegetable,15g,4.8,0g,1.1g,.3g,.3g,1,1,0,1,0
+265,  potato  ,vegetable,173g,161,.2g,37g,2g,4.3g,1,1,0,1,0
+266,  red onion  ,vegetable,94g,41,.2g,9.5g,4.4g,1.3g,1,1,0,1,0
+267,  celery  ,vegetable,40g,6.4,.1g,1.2g,.5g,.3g,1,1,0,1,0
+268,  chili pepper  ,vegetable,45g,18,.2g,4g,2.4g,.8g,1,1,0,1,0
+269,  canned tomato  ,vegetable,190g,30,.5g,6.6g,4.8g,1.5g,1,1,0,1,0
+270,  jalapeno  ,vegetable,14g,4.1,.1g,.9g,.6g,.1g,1,1,0,1,0
+271,  avocado  ,vegetable,201g,322,29g,17g,1.3g,4g,1,1,0,1,0
+272,  zucchini  ,vegetable,200g,30,.7g,5.4g,3.4g,2.3g,1,1,0,1,0
+273,  shallot  ,vegetable,43g,31,0g,3.3g,7.1g,1.1g,1,1,0,1,0
+274,  cherry tomato  ,vegetable,17g,3.1,0g,.7g,.5g,.1g,1,1,0,1,0
+275,  sweet corn  ,vegetable,100g,80,1g,18g,6g,3g,1,1,0,1,0
+276,  cucumber  ,vegetable,201g,30,.2g,7.3g,3.4g,1.3g,1,1,0,1,0
+277,  spinach  ,vegetable,180g,41,.5g,6.8g,.8g,5.3g,1,1,0,1,0
+278,  sweet potato  ,vegetable,114g,103,.2g,24g,7.4g,2.3g,1,1,0,1,0
+279,  broccoli  ,vegetable,10g,3.5,0g,.7g,.1g,.2g,1,1,0,1,0
+280,  pumpkin  ,vegetable,245g,49,.2g,12g,5.1g,1.8g,1,1,0,1,0
+281,  baby greens  ,vegetable,190g,63,1.4g,11g,.8g,5.1g,1,1,0,1,0
+282,  cabbage  ,vegetable,75g,17,.1g,4.1g,2.1g,.9g,1,1,0,1,0
+283,  cauliflower  ,vegetable,575g,132,2.6g,24g,12g,11g,1,1,0,1,0
+284,  asparagus  ,vegetable,75g,17,.2g,3.1g,1g,1.8g,1,1,0,1,0
+285,  kale  ,vegetable,4.7g,36,.5g,7.3g,1.6g,2.5g,1,1,0,1,0
+286,  arugula  ,vegetable,10g,2.5,.1g,.4g,.2g,.3g,1,1,0,1,0
+287,  leek  ,vegetable,124g,38,.3g,9.4g,2.6g,1g,1,1,0,1,0
+288,  eggplant  ,vegetable,566g,198,1.3g,49g,18g,4.7g,1,1,0,1,0
+289,  lettuce  ,vegetable,94g,16,.3g,3.1g,1.1g,1.2g,1,1,0,1,0
+290,  butternut squash  ,vegetable,205g,82,.2g,22g,4g,1.8g,1,1,0,1,0
+291,  green olives  ,vegetable,2.7g,3.9,.4g,.1g,0g,0g,1,1,0,1,0
+292,  sweet onion  ,vegetable,331g,106,.3g,25g,17g,2.6g,1,1,0,1,0
+293,  beetroot  ,vegetable,50g,22,.1g,5g,4g,.8g,1,1,0,1,0
+294,  romaine  ,vegetable,94g,16,.3g,3.1g,1.1g,1.2g,1,1,0,1,0
+295,  black olives  ,vegetable,3.8g,4.4,.4g,.2g,0g,0g,1,1,0,1,0
+296,  artichoke  ,vegetable,120g,64,.4g,14g,1.2g,3.5g,1,1,0,1,0
+297,  brussels sprout  ,vegetable,168g,60,.8g,12g,2.9g,4.3g,1,1,0,1,0
+298,  fennel  ,vegetable,87g,27,.2g,6.4g,3.4g,1.1g,1,1,0,1,0
+299,  radish  ,vegetable,4.5g,0.7,0g,.1g,.1g,0g,1,1,0,1,0
+300,  canned pumpkin  ,vegetable,245g,83,.7g,20g,8.1g,2.7g,1,1,0,1,0
+301,  kalamata olives  ,vegetable,2.9g,6.2,.6g,.2g,0g,0g,1,1,0,1,0
+302,  summer squash  ,vegetable,342g,68,1.1g,15g,8.9g,3.1g,1,1,0,1,0
+303,  red cabbage  ,vegetable,150g,44,.1g,10g,5g,2.3g,1,1,0,1,0
+304,  mixed greens  ,vegetable,85g,20,.2g,4.2g,1.8g,1.2g,1,1,0,1,0
+305,  horseradish  ,vegetable,5g,2.4,0g,.6g,.4g,.1g,1,1,0,1,0
+306,  parsnip  ,vegetable,98g,70,.3g,17g,4.7g,1.3g,1,1,0,1,0
+307,  mixed vegetable  ,vegetable,140g,45,.5g,9.7g,3.7g,2.4g,1,1,0,1,0
+308,  poblano pepper  ,vegetable,64g,13,.1g,3g,1.5g,.6g,1,1,0,1,0
+309,  bean sprouts  ,vegetable,124g,26,.1g,5.2g,3.5g,2.5g,1,1,0,1,0
+310,  serrano pepper  ,vegetable,6.1g,2,0g,.4g,.2g,.1g,1,1,0,1,0
+311,  sweet pepper  ,vegetable,114g,32,.2g,7.6g,3.6g,1g,1,1,0,1,0
+312,  watercress  ,vegetable,34g,3.7,0g,.4g,.1g,.8g,1,1,0,1,0
+313,  bok choy  ,vegetable,170g,20,.3g,3g,1.4g,2.7g,1,1,0,1,0
+314,  iceberg  ,vegetable,57g,8,.1g,1.7g,1.1g,.5g,1,1,0,1,0
+315,  chard  ,vegetable,175g,35,.1g,7.2g,1.9g,3.3g,1,1,0,1,0
+316,  green tomato  ,vegetable,123g,28,.3g,6.3g,4.9g,1.5g,1,1,0,1,0
+317,  pimiento  ,vegetable,12g,2.8,0g,.6g,.3g,.1g,1,1,0,1,0
+318,  butter lettuce  ,vegetable,163g,21,.4g,3.6g,1.5g,2.2g,1,1,0,1,0
+319,  spaghetti squash  ,vegetable,958g,259,2.5g,62g,24g,6.3g,1,1,0,1,0
+320,  sauerkraut  ,vegetable,142g,27,.2g,6.1g,2.5g,1.3g,1,1,0,1,0
+321,  celeriac  ,vegetable,155g,42,.3g,9.1g,0g,1.5g,1,1,0,1,0
+322,  napa cabbage  ,vegetable,109g,13,.2g,2.4g,0g,1.2g,1,1,0,1,0
+323,  water chestnut  ,vegetable,62g,60,.1g,15g,3g,.9g,1,1,0,1,0
+324,  turnip  ,vegetable,120g,26,.1g,6.1g,3.6g,.8g,1,1,0,1,0
+325,  okra  ,vegetable,80g,18,.2g,3.6g,1.9g,1.5g,1,1,0,1,0
+326,  acorn squash  ,vegetable,205g,115,.3g,30g,0g,2.3g,1,1,0,1,0
+327,  radicchio  ,vegetable,40g,9.2,.1g,1.8g,.2g,.6g,1,1,0,1,0
+328,  corn cob  ,vegetable,89g,85,1.3g,19g,4g,3g,1,1,0,1,0
+329,  pearl onion  ,vegetable,15g,6.6,0g,1.5g,.7g,.2g,1,1,0,1,0
+330,  thai chili  ,vegetable,3g,1.2,0g,.3g,.2g,.1g,1,1,0,1,0
+331,  plantain  ,vegetable,240g,278,.4g,75g,34g,1.9g,1,1,0,1,0
+332,  tenderstem broccoli  ,vegetable,10g,3.5,0g,.7g,.1g,.2g,1,1,0,1,0
+333,  leaf lettuce  ,vegetable,17g,2.9,.1g,.6g,.2g,.2g,1,1,0,1,0
+334,  endive  ,vegetable,53g,9,.1g,2.1g,0g,.5g,1,1,0,1,0
+335,  jicama  ,vegetable,120g,46,.1g,11g,2.2g,.9g,1,1,0,1,0
+336,  corn husk  ,vegetable,103g,99,1.5g,22g,4.7g,3.5g,1,1,0,1,0
+337,  habanero pepper  ,vegetable,45g,18,.2g,4g,2.4g,.8g,1,1,0,1,0
+338,  canned whole tomato  ,vegetable,123g,22,.3g,4.8g,3.2g,1.1g,1,1,0,1,0
+339,  collard greens  ,vegetable,190g,63,1.4g,11g,.8g,5.1g,1,1,0,1,0
+340,  baby corn  ,vegetable,85g,19,.3g,4.2g,.9g,.7g,1,1,0,1,0
+341,  daikon  ,vegetable,357g,61,.9g,12g,6.5g,2.4g,1,1,0,1,0
+342,  belgian endive  ,vegetable,53g,9,.1g,2.1g,0g,.5g,1,1,0,1,0
+343,  broccoli rabe  ,vegetable,10g,3.5,0g,.7g,.1g,.2g,1,1,0,1,0
+344,  rutabaga  ,vegetable,140g,52,.2g,12g,6.2g,1.5g,1,1,0,1,0
+345,  ancho chili pepper  ,vegetable,17g,48,1.4g,8.7g,0g,2g,1,1,0,1,0
+346,  bamboo shoot  ,vegetable,131g,25,.5g,4.2g,2.5g,2.3g,1,1,0,1,0
+347,  boston lettuce  ,vegetable,163g,21,.4g,3.6g,1.5g,2.2g,1,1,0,1,0
+348,  yam  ,vegetable,136g,158,.2g,37g,.7g,2g,1,1,0,1,0
+349,  kohlrabi  ,vegetable,135g,36,.1g,8.4g,3.5g,2.3g,1,1,0,1,0
+350,  guajillo pepper  ,vegetable,2.3g,5.8,.1g,1.5g,0g,.2g,1,1,0,1,0
+351,  frisee  ,vegetable,29g,6.7,.1g,1.4g,.2g,.5g,1,1,0,1,0
+352,  delicata squash  ,vegetable,205g,76,.7g,18g,6.8g,1.8g,1,1,0,1,0
+353,  anaheim pepper  ,vegetable,64g,13,.1g,3g,1.5g,.6g,1,1,0,1,0
+354,  cress  ,vegetable,50g,16,.4g,2.8g,2.2g,1.3g,1,1,0,1,0
+355,  golden beet  ,vegetable,50g,22,.1g,5g,4g,.8g,1,1,0,1,0
+356,  gem lettuce  ,vegetable,94g,16,.3g,3.1g,1.1g,1.2g,1,1,0,1,0
+357,  alfalfa  ,vegetable,33g,7.6,.2g,.7g,.1g,1.3g,1,1,0,1,0
