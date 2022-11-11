@@ -13,3 +13,4 @@ aioflask
 bcrypt
 sklearn
 flask
+gunicorn
