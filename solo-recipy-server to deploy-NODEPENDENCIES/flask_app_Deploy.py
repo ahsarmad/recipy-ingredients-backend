@@ -59,13 +59,8 @@ def NearestNeighbor_Reccomendation():
 # Paths to useful directories
 
 path_to_cwd =(os.getcwd())
-path_to_datasets= os.path.join(path_to_cwd,"datasets")
-
-path_to_ingredient_data= os.path.join(path_to_datasets,"Manually Combined Dataset.csv")
-
-path_to_server= os.path.join(path_to_cwd,"server")
-path_to_recipe_data = os.path.join(path_to_server,"recipe_data")
-path_to_central_recipe_data = os.path.join(path_to_recipe_data,"central_recipe_data.csv")
+path_to_ingredient_data= os.path.join(path_to_cwd,"Manually Combined Dataset.csv")
+path_to_central_recipe_data = os.path.join(path_to_cwd,"central_recipe_data.csv")
 
 start_time = time.time()
 ingredient_data = pd.read_csv(path_to_ingredient_data, encoding="latin-1")
@@ -135,4 +130,4 @@ def load_ingredients():
    return jsonify(ingredients)
 
 if __name__ == '__main__':
-   app.run()
+   app.run(port =12345)
