@@ -150,6 +150,11 @@ def load_ingredients():
     return jsonify(ingredients)
 
 
+@app.route("/")
+def index():
+    return "Server is running!"
+
+
 if __name__ == '__main__':
     #    app.run(port =12345)
     app.run()
