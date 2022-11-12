@@ -138,7 +138,6 @@ def load_ingredients():
     # Timing Start
     start_time = time.time()
     path = os.getcwd()
-    path = os.path.join(path, 'datasets')
     path = os.path.join(path, 'ingredient_data2.json')
     path = open(path)
     #ingredients= pd.read_csv(path,encoding='latin-1')
