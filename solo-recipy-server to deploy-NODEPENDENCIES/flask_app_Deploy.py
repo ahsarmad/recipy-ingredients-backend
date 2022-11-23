@@ -1,4 +1,3 @@
-from distutils.log import error
 from sqlite3 import Time
 from flask import Flask, render_template, jsonify
 import time
@@ -7,7 +6,8 @@ import os
 import pandas as pd
 import json
 import pickle
-# import sklearn
+from sklearn.cluster import KMeans
+import sklearn
 
 
 app = Flask(__name__)
@@ -65,12 +65,7 @@ def ingredient_filter(query_string, recipe_data):
     return ingredient_filter
 
 
-def NearestNeighbor_Reccomendation():
-    # IDEA: Given a list of X data points as favorited recipes we should be able to preform a k nearest neighbor reccomendation
-    # (SOURCE) https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.BallTree.html#sklearn.neighbors.BallTree
-    return
 # Paths to useful directories
-
 
 path_to_cwd = (os.getcwd())
 path_to_ingredient_data = os.path.join(
@@ -102,7 +97,7 @@ def load_recipe_data():
     return recipe_data
 
 
-def query_recipe_data(query):
+def query_recipe_data(recipe_data, query):
 
     # Testing Search Queries
     recipe_data_with_ingredient_list = get_ingredients_list(recipe_data)
@@ -118,7 +113,82 @@ def query_recipe_data(query):
     return recipe_data_with_ingredient_list[filter]
 
 
+def mass_query_recipe_data(recipe_data, query_data):
+    # Assume query_data is a list
+    data = query_recipe_data(recipe_data, query_data[0])
+    for q in range(1, len(query_data)):
+        pd.concat([data, query_recipe_data(
+            recipe_data, query_data[q])], axis=1)
+    return data
+
+
+def get_recipe_data(recipe_data, recipe_ID):
+    recipe_ID = int(recipe_ID)
+    return recipe_data.iloc[recipe_ID]
+
+
+def mass_get_recipe_data(recipe_data, query_data):
+
+    query_list = query_data.split(',')
+    query_list = list(map(int, query_list))
+    data = recipe_data.iloc[query_list]
+    return data
+
+#
+#   KMEANS_Reccomendation(query_data,pantry):
+#
+#       query_data  : comma seperated list of recipes
+#       pantry      : comma seperated list of pantry ingredients
+#
+#       Returns     : A dictionary with reccomendations corresponding to the index.
+#                     example: dict[query_data[0]] = {list of recipes recomended based on query_data[0]}
+
+
+def KMEANS_Reccomendation(query_data, pantry, recipe_data):
+    # Note every thing should be in grams
+    NUMERICAL_COLS = ['CALORIES', 'FAT', 'CARBS', 'PROTEIN']
+
+    """data =(recipe_data[NUMERICAL_COLS])"""
+
+    # We can make this into a function that works on arbitary samples by replacing sample_data with parameter of favorited users
+    # Will need way to select data from database
+
+    query_based_data = mass_get_recipe_data(recipe_data, query_data)
+    pantry_based_data = mass_query_recipe_data(recipe_data, pantry)
+    sample_data = pd.concat([query_based_data, pantry_based_data])
+    # Data we are using to do K means
+    #sample_data = sample_data[NUMERICAL_COLS]
+    sample_model = KMeans(3, random_state=0).fit(sample_data[NUMERICAL_COLS])
+    sample_data['LABEL'] = sample_model.predict(sample_data[NUMERICAL_COLS])
+
+    # For each recipe in the query list containing recipes we want recconmendations in we want to return all other recipes in the same cluster.
+    reccomendations = dict()
+    for q in query_data.split(','):
+        # Look up the cluster of q and set it equal to the value at index q.
+        q = int(q)
+        reccomendations[q] = sample_data[sample_data['LABEL']
+                                         == sample_data.iloc[q]['LABEL']].to_dict()
+    return reccomendations
+
 # Endpoints
+
+
+#   KMEANS_Reccomendation(query_data,pantry,recipe_data):
+#
+#       query_data  : comma seperated list of recipes
+#       pantry      : comma seperated list of pantry ingredients
+#       recipe_data : dataframe all recipe data comes from
+#
+#       Returns     : A dictionary with reccomendations corresponding to the index.
+#                     example: dict[query_data[0]] = {list of recipes recomended based on query_data[0]}
+@app.route('/recommend/<string:query_data>/<string:pantry_data>')
+def reccomend(query_data, pantry_data):
+    # query_data=query_data.split(",")
+    # pantry_data=pantry_data.split(",")
+    data = KMEANS_Reccomendation(query_data, pantry_data, recipe_data)
+
+    return jsonify(data)
+
 
 """
 search_filter(query,filter): queries databse for search but applies filter over that.
@@ -129,7 +199,7 @@ search_filter(query,filter): queries databse for search but applies filter over 
 
 @app.route('/search/<string:query>/<string:filter>/<string:black_list>')
 def search_filter(query, filter, black_list):
-    data = query_recipe_data(query)
+    data = query_recipe_data(recipe_data, query)
     # Assume Blacklist is list of strings seperated by commas
     black_list_filter = ingredient_filter(black_list, data)
     black_list_filter = np.logical_not(black_list_filter)
@@ -150,13 +220,8 @@ search(query): preforms webscraping search saving nothing
 
 @app.route('/search/<string:query>')
 def search(query):
-    data = query_recipe_data(query)
+    data = query_recipe_data(recipe_data, query)
     return jsonify(data.to_dict())
-
-
-@app.route('/')
-def index():
-    return "Server is running!"
 
 
 """
@@ -179,6 +244,11 @@ def load_ingredients():
     print("Time taken to retrieve:")
     print(end_time-start_time)
     return jsonify(ingredients)
+
+
+@app.route('/')
+def index():
+    return "Server is running!"
 
 
 if __name__ == '__main__':
