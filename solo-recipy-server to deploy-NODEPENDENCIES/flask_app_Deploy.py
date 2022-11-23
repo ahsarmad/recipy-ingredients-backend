@@ -7,7 +7,7 @@ import pandas as pd
 import json
 import pickle
 from sklearn.cluster import KMeans
-import sklearn
+# import sklearn
 
 
 app = Flask(__name__)
