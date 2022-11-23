@@ -7,7 +7,7 @@ import pandas as pd
 import json
 import pickle
 from sklearn.cluster import KMeans
-import sklearn
+# import sklearn
 
 
 app = Flask(__name__)
@@ -253,3 +253,7 @@ def index():
 
 if __name__ == '__main__':
     app.run()
+
+
+# empty comment to test
+# empty comment again
