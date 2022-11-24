@@ -166,9 +166,9 @@ def KMEANS_Reccomendation(query_data, pantry, recipe_data):
     for q in query_data.split(','):
         # Look up the cluster of q and set it equal to the value at index q.
         q = int(q)
-        reccomendations[q] = sample_data[sample_data['LABEL']
-                                         == sample_data.iloc[q]['LABEL']].to_dict()
-    return reccomendations
+        reccomendations[q] = (sample_data[sample_data['LABEL'] ==
+                              sample_data.iloc[q]['LABEL']].sample(n=10)).to_dict()
+        return reccomendations
 
 # Endpoints
 
