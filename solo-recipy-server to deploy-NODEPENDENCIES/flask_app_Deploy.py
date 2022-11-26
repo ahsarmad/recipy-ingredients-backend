@@ -170,6 +170,25 @@ def KMEANS_Reccomendation(query_data, pantry, recipe_data):
                               sample_data.iloc[q]['LABEL']].sample(n=10)).to_dict()
         return reccomendations
 
+
+#   keyword_search(keyword, recipe_data):
+#
+#       keyword  : some string to look up in the titles and descriptions
+#       recipe_data : dataframe all recipe data comes from
+#
+#       Returns  : A dataframe that contains keyword
+#
+#
+def keyword_search(keyword, recipe_data):
+    title_search = (
+        recipe_data.loc[recipe_data['TITLE'].str.lower().str.contains(keyword.lower())])
+    description_search = (
+        recipe_data.loc[recipe_data['DESCRIPTION'].str.lower().str.contains(keyword.lower())])
+    result = pd.concat([title_search, description_search])
+    result = remove_duplicates(result)
+    return result
+
+
 # Endpoints
 
 
@@ -244,6 +263,19 @@ def load_ingredients():
     print("Time taken to retrieve:")
     print(end_time-start_time)
     return jsonify(ingredients)
+
+
+"""
+keyword_search(query): preforms keyword search
+@param query: some string to look up in the titles and descriptions
+@return: json of search results
+"""
+
+
+@app.route('/key_word_search/<string:keyword>')
+def key_word_search(keyword):
+    data = keyword_search(keyword, recipe_data)
+    return jsonify(data.to_dict())
 
 
 @app.route('/')
