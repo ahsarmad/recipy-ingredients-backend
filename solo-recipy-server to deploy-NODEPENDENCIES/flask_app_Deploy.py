@@ -200,13 +200,32 @@ def keyword_search(keyword, recipe_data):
 #
 #       Returns     : A dictionary with reccomendations corresponding to the index.
 #                     example: dict[query_data[0]] = {list of recipes recomended based on query_data[0]}
-@app.route('/recommend/<string:query_data>/<string:pantry_data>')
-def reccomend(query_data, pantry_data):
+@app.route('/reccomend/<string:query_data>/<string:pantry_data>')
+def recomend(query_data, pantry_data):
     # query_data=query_data.split(",")
     # pantry_data=pantry_data.split(",")
     data = KMEANS_Reccomendation(query_data, pantry_data, recipe_data)
 
     return jsonify(data)
+
+#   keyword_search(keyword, recipe_data):
+#
+#       keyword  : some string to look up in the titles and descriptions
+#       recipe_data : dataframe all recipe data comes from
+#
+#       Returns  : A dataframe that contains keyword
+#
+#
+
+
+def keyword_search(keyword, recipe_data):
+    title_search = (
+        recipe_data.loc[recipe_data['TITLE'].str.lower().str.contains(keyword.lower())])
+    description_search = (
+        recipe_data.loc[recipe_data['DESCRIPTION'].str.lower().str.contains(keyword.lower())])
+    result = pd.concat([title_search, description_search])
+    result = remove_duplicates(result)
+    return result.dropna()
 
 
 """
@@ -227,7 +246,7 @@ def search_filter(query, filter, black_list):
         data = data[data[filter] == 1]
     data = data[black_list_filter]
 
-    return jsonify(data.to_dict())
+    return jsonify(data.dropna().to_dict())
 
 
 """
@@ -240,7 +259,20 @@ search(query): preforms webscraping search saving nothing
 @app.route('/search/<string:query>')
 def search(query):
     data = query_recipe_data(recipe_data, query)
-    return jsonify(data.to_dict())
+    return jsonify(data.dropna().to_dict())
+
+
+"""
+keyword_search(query): preforms keyword search
+@param query: some string to look up in the titles and descriptions
+@return: json of search results
+"""
+
+
+@app.route('/key_word_search/<string:keyword>')
+def key_word_search(keyword):
+    data = keyword_search(keyword, recipe_data)
+    return jsonify(data.dropna().to_dict())
 
 
 """
@@ -263,19 +295,6 @@ def load_ingredients():
     print("Time taken to retrieve:")
     print(end_time-start_time)
     return jsonify(ingredients)
-
-
-"""
-keyword_search(query): preforms keyword search
-@param query: some string to look up in the titles and descriptions
-@return: json of search results
-"""
-
-
-@app.route('/key_word_search/<string:keyword>')
-def key_word_search(keyword):
-    data = keyword_search(keyword, recipe_data)
-    return jsonify(data.to_dict())
 
 
 @app.route('/')
