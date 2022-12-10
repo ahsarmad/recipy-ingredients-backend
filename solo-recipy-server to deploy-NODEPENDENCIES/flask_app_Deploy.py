@@ -166,9 +166,13 @@ def KMEANS_Reccomendation(query_data, pantry, recipe_data):
     for q in query_data.split(','):
         # Look up the cluster of q and set it equal to the value at index q.
         q = int(q)
-        reccomendations[q] = (sample_data[sample_data['LABEL'] ==
-                              sample_data.iloc[q]['LABEL']].sample(n=10)).to_dict()
-        return reccomendations
+
+        reccomendations[q] = (
+            sample_data[sample_data['LABEL'] == sample_data.iloc[q]['LABEL']]).to_dict()
+        if (len(reccomendations[q]) >= 10):
+            reccomendations[q] = (sample_data[sample_data['LABEL'] ==
+                                              sample_data.iloc[q]['LABEL']].sample(n=10)).to_dict()
+            return reccomendations
 
 
 #   keyword_search(keyword, recipe_data):
@@ -200,7 +204,7 @@ def keyword_search(keyword, recipe_data):
 #
 #       Returns     : A dictionary with reccomendations corresponding to the index.
 #                     example: dict[query_data[0]] = {list of recipes recomended based on query_data[0]}
-@app.route('/reccomend/<string:query_data>/<string:pantry_data>')
+@app.route('/recommend/<string:query_data>/<string:pantry_data>')
 def recomend(query_data, pantry_data):
     # query_data=query_data.split(",")
     # pantry_data=pantry_data.split(",")
