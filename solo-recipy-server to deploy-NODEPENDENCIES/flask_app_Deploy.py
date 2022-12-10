@@ -174,7 +174,7 @@ def KMEANS_Reccomendation(query_data, pantry, recipe_data):
                                               sample_data.iloc[q]['LABEL']].sample(n=10)).to_dict()
             return reccomendations
 
-# expty commmit for heroku push
+# expty commmit for heroku
 
 
 #   keyword_search(keyword, recipe_data):
